@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/micro/cli"
-	"github.com/micro/examples/service/proto"
+	proto "github.com/micro/examples/service/proto"
 	"github.com/micro/go-micro"
 	"golang.org/x/net/context"
 )
