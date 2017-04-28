@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/micro/go-micro/broker"
-	"github.com/micro/go-micro/codec"
-	"github.com/micro/go-micro/metadata"
-	"github.com/micro/go-micro/registry"
+	"broker"
+	"codec"
 	"golang.org/x/net/context"
+	"metadata"
+	"registry"
 )
 
 const (

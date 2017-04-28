@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/micro/go-micro/registry/mock"
 	"github.com/pborman/uuid"
+	"registry/mock"
 )
 
 func sub(be *testing.B, c int) {

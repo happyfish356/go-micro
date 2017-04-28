@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/micro/go-micro/registry"
+	"registry"
 )
 
 func addNodes(old, neu []*registry.Node) []*registry.Node {

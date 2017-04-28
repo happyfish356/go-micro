@@ -1,7 +1,7 @@
 package selector
 
 import (
-	"github.com/micro/go-micro/registry"
+	"registry"
 
 	"golang.org/x/net/context"
 )

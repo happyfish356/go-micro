@@ -3,11 +3,11 @@ package client
 import (
 	"time"
 
-	"github.com/micro/go-micro/broker"
-	"github.com/micro/go-micro/codec"
-	"github.com/micro/go-micro/registry"
-	"github.com/micro/go-micro/selector"
-	"github.com/micro/go-micro/transport"
+	"broker"
+	"codec"
+	"registry"
+	"selector"
+	"transport"
 
 	"golang.org/x/net/context"
 )

@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/micro/go-micro/registry"
+	"registry"
 )
 
 type mockRegistry struct {

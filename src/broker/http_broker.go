@@ -17,13 +17,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/broker/codec/json"
-	"github.com/micro/go-micro/errors"
-	"github.com/micro/go-micro/registry"
+	"broker/codec/json"
+	"errors"
 	maddr "github.com/micro/misc/lib/addr"
 	mnet "github.com/micro/misc/lib/net"
 	mls "github.com/micro/misc/lib/tls"
 	"github.com/pborman/uuid"
+	"registry"
 
 	"golang.org/x/net/context"
 )

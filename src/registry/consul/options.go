@@ -2,8 +2,8 @@ package consul
 
 import (
 	consul "github.com/hashicorp/consul/api"
-	"github.com/micro/go-micro/registry"
 	"golang.org/x/net/context"
+	"registry"
 )
 
 func Config(c *consul.Config) registry.Option {

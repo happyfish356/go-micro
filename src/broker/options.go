@@ -3,9 +3,9 @@ package broker
 import (
 	"crypto/tls"
 
-	"github.com/micro/go-micro/broker/codec"
-	"github.com/micro/go-micro/registry"
+	"broker/codec"
 	"golang.org/x/net/context"
+	"registry"
 )
 
 type Options struct {

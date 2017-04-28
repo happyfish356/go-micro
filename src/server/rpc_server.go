@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/broker"
-	"github.com/micro/go-micro/codec"
-	"github.com/micro/go-micro/metadata"
-	"github.com/micro/go-micro/registry"
-	"github.com/micro/go-micro/transport"
+	"broker"
+	"codec"
+	"metadata"
+	"registry"
+	"transport"
 
 	"github.com/micro/misc/lib/addr"
 

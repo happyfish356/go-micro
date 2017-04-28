@@ -3,7 +3,7 @@ package selector
 import (
 	"testing"
 
-	"github.com/micro/go-micro/registry/mock"
+	"registry/mock"
 )
 
 func TestDefaultSelector(t *testing.T) {

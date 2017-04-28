@@ -1,12 +1,12 @@
 package cmd
 
 import (
-	"github.com/micro/go-micro/broker"
-	"github.com/micro/go-micro/client"
-	"github.com/micro/go-micro/registry"
-	"github.com/micro/go-micro/selector"
-	"github.com/micro/go-micro/server"
-	"github.com/micro/go-micro/transport"
+	"broker"
+	"client"
+	"registry"
+	"selector"
+	"server"
+	"transport"
 
 	"golang.org/x/net/context"
 )

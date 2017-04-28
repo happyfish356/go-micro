@@ -4,8 +4,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/micro/go-micro/registry/mock"
-	proto "github.com/micro/go-micro/server/debug/proto"
+	"registry/mock"
+	"server/debug/proto"
 
 	"golang.org/x/net/context"
 )

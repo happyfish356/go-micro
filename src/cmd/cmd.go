@@ -9,26 +9,26 @@ import (
 	"strings"
 	"time"
 
+	"client"
 	"github.com/micro/cli"
-	"github.com/micro/go-micro/client"
-	"github.com/micro/go-micro/server"
+	"server"
 
 	// brokers
-	"github.com/micro/go-micro/broker"
-	"github.com/micro/go-micro/broker/http"
+	"broker"
+	"broker/http"
 
 	// registries
-	"github.com/micro/go-micro/registry"
-	"github.com/micro/go-micro/registry/consul"
-	"github.com/micro/go-micro/registry/mdns"
+	"registry"
+	"registry/consul"
+	"registry/mdns"
 
 	// selectors
-	"github.com/micro/go-micro/selector"
-	"github.com/micro/go-micro/selector/cache"
+	"selector"
+	"selector/cache"
 
 	// transports
-	"github.com/micro/go-micro/transport"
-	thttp "github.com/micro/go-micro/transport/http"
+	"transport"
+	thttp "transport/http"
 )
 
 type Cmd interface {

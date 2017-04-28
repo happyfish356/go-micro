@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/micro/go-micro/registry"
+	"registry"
 )
 
 type defaultSelector struct {

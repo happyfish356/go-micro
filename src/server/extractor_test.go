@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/micro/go-micro/registry"
 	"golang.org/x/net/context"
+	"registry"
 )
 
 type testHandler struct{}

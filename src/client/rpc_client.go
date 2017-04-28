@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/broker"
-	"github.com/micro/go-micro/codec"
+	"broker"
+	"codec"
 	"github.com/micro/go-micro/errors"
-	"github.com/micro/go-micro/metadata"
-	"github.com/micro/go-micro/selector"
-	"github.com/micro/go-micro/transport"
+	"metadata"
+	"selector"
+	"transport"
 
 	"golang.org/x/net/context"
 )

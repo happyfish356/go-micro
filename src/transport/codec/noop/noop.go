@@ -3,8 +3,8 @@ package noop
 import (
 	"errors"
 
-	"github.com/micro/go-micro/transport"
-	"github.com/micro/go-micro/transport/codec"
+	"transport"
+	"transport/codec"
 )
 
 type noopCodec struct{}

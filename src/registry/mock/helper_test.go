@@ -3,7 +3,7 @@ package mock
 import (
 	"testing"
 
-	"github.com/micro/go-micro/registry"
+	"registry"
 )
 
 func TestDelServices(t *testing.T) {
