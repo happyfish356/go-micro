@@ -8,8 +8,6 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/gorilla/rpc"
-	"github.com/gorilla/rpc/json"
 	"github.com/pborman/uuid"
 	"registry"
 )
@@ -27,34 +25,25 @@ var (
 	}
 )
 
-type Say struct{}
-
-type Request map[string]interface{}
-type Response string
-
-func (s *Say) Hello(r *http.Request, req *Request, rsp *Response) error {
-	*rsp = Response(fmt.Sprintf("Hello %s!", (*req)["name"]))
-	return nil
-}
-
 func main() {
 	l, err := net.Listen("tcp", "localhost:4000")
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	s := rpc.NewServer()
-	s.RegisterCodec(json.NewCodec(), "application/json")
-	s.RegisterService(new(Say), "")
-	http.Handle("/", s)
+	http.HandleFunc("/greeter", func(w http.ResponseWriter, r *http.Request) {
+		r.ParseForm()
+		fmt.Fprintf(w, "Hello %s!", r.Form.Get("name"))
+	})
+
 	go http.Serve(l, http.DefaultServeMux)
 
-	register(service)
+	Register(service)
 
 	notify := make(chan os.Signal, 1)
 	signal.Notify(notify, syscall.SIGTERM, syscall.SIGINT, syscall.SIGKILL)
 	<-notify
 
-	deregister(service)
+	Deregister(service)
 	l.Close()
 }

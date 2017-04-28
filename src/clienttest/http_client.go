@@ -1,11 +1,13 @@
+// +build main1
 package main
 
 import (
 	"fmt"
+	"net/url"
 )
 
 func main() {
-	rsp, err := rpcCall("/greeter/say/hello", map[string]interface{}{"name": "John"})
+	rsp, err := httpCall("/greeter", url.Values{"name": []string{"John"}})
 	if err != nil {
 		fmt.Println(err)
 		return
