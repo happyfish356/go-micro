@@ -4,7 +4,7 @@ import (
 	"runtime"
 	"time"
 
-	"server/debug/proto"
+	proto "server/debug/proto"
 
 	"golang.org/x/net/context"
 )
