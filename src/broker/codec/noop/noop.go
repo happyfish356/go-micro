@@ -1,7 +1,7 @@
 package noop
 
 import (
-	"errors"
+	errors "errors1"
 
 	"broker"
 	"broker/codec"
