@@ -19,9 +19,9 @@ import "fmt"
 import "math"
 
 import (
-	"github.com/micro/go-micro/client"
-	"github.com/micro/go-micro/server"
+	"client"
 	"golang.org/x/net/context"
+	"server"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
