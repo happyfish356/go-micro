@@ -7,7 +7,7 @@ import (
 	"codec"
 	"codec/jsonrpc"
 	"codec/protorpc"
-	"github.com/micro/go-micro/errors"
+	errors "errors1"
 	"transport"
 )
 

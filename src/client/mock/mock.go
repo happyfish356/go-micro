@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"client"
-	"errors"
+	errors "errors1"
 
 	"golang.org/x/net/context"
 )
