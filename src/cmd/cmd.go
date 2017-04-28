@@ -1,5 +1,5 @@
 // Package cmd is an interface for parsing the command line
-package cmd
+package cmd1
 
 import (
 	"fmt"
