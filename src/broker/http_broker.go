@@ -18,7 +18,7 @@ import (
 	"time"
 
 	"broker/codec/json"
-	"errors"
+	errors "errors1"
 	maddr "github.com/micro/misc/lib/addr"
 	mnet "github.com/micro/misc/lib/net"
 	mls "github.com/micro/misc/lib/tls"
