@@ -1,5 +1,3 @@
-// +build main2
-
 package main
 
 import (
@@ -10,8 +8,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/micro/go-micro/registry"
 	"github.com/pborman/uuid"
+	"registry"
 )
 
 var (

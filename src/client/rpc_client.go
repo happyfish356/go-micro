@@ -8,7 +8,7 @@ import (
 
 	"broker"
 	"codec"
-	"github.com/micro/go-micro/errors"
+	errors "errors1"
 	"metadata"
 	"selector"
 	"transport"

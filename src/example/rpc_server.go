@@ -1,5 +1,3 @@
-// +build main4
-
 package main
 
 import (
@@ -12,8 +10,8 @@ import (
 
 	"github.com/gorilla/rpc"
 	"github.com/gorilla/rpc/json"
-	"github.com/micro/go-micro/registry"
 	"github.com/pborman/uuid"
+	"registry"
 )
 
 var (
