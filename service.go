@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"client"
-	"github.com/micro/go-micro/cmd"
+	cmd "cmd1"
 	"metadata"
 	"server"
 )

@@ -5,8 +5,8 @@ import (
 
 	"broker"
 	"client"
+	cmd "cmd1"
 	"github.com/micro/cli"
-	"github.com/micro/go-micro/cmd"
 	"registry"
 	"selector"
 	"server"
