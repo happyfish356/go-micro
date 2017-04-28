@@ -5,12 +5,12 @@ import (
 	"os"
 
 	"github.com/micro/cli"
-	proto "github.com/micro/examples/service/proto"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/client"
 	"github.com/micro/go-micro/metadata"
 	"github.com/micro/go-micro/server"
 	"golang.org/x/net/context"
+	proto "test/proto"
 )
 
 /*
