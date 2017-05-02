@@ -17,8 +17,8 @@ type Options struct {
 	Broker       broker.Broker
 	Registry     registry.Registry
 	Transport    transport.Transport
-	Metadata     map[string]string
-	Name         string
+	Metadata     map[string]string //一些其它的参数
+	Name         string            //服务器的名字
 	Address      string
 	Advertise    string
 	Id           string

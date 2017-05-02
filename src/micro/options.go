@@ -17,7 +17,7 @@ import (
 
 type Options struct {
 	Broker    broker.Broker
-	Cmd       cmd.Cmd
+	Cmd       cmd.Cmd //存放了很多入品参数
 	Client    client.Client
 	Server    server.Server
 	Registry  registry.Registry
